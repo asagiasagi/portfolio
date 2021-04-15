@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_weather_widget"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:orientation="vertical"
+    android:background="#80040404"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textview_date_weather_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="yyyy/mm/dd hh:mm"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/textview_city_weather_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_date_weather_widget"
+        android:hint="tokyo"
+        android:textSize="48sp" />
+
+    <FrameLayout
+        android:id="@+id/framelayout_icon_weather_widget"
+        android:layout_width="128dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp">
+
+        <ImageView
+            android:scaleType="fitCenter"
+            android:id="@+id/imageview_icon_weather_widget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textview_main_weather_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:hint="sunny"
+        android:textSize="32sp" />
+</RelativeLayout>
